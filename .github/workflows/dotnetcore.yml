@@ -16,5 +16,5 @@ jobs:
     - name: Build with dotnet
       run: |
         dotnet pack -c Release -o nuget
-        dotnet nuget push nuget/*.nupkg -s https://api.nuget.org/v3/index.json -k ${{ secrets.GHPackagesToken }}
+        dotnet nuget push nuget/*.nupkg -s https://api.nuget.org/v3/index.json -k ${{ secrets.NUGET_ORG_API_KEY }}
       shell: bash
