@@ -7,5 +7,8 @@ namespace Test.Nuget.Action.Lib
         public static void Operation1()
         {
         }
+        public static void Operation2()
+        {
+        }
     }
 }
